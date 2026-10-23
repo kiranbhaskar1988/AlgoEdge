@@ -1,0 +1,19 @@
+[Unit]
+Description=AlgoEdge Angel One Algo Trading
+After=network-online.target
+
+[Service]
+Type=simple
+User=CHANGE_TO_YOUR_USERNAME
+WorkingDirectory=CHANGE_TO_YOUR_PATH/algoedge
+ExecStart=CHANGE_TO_YOUR_PATH/algoedge/venv/bin/python main.py
+Restart=on-failure
+RestartSec=30s
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=CHANGE_TO_YOUR_PATH/algoedge/.env
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target

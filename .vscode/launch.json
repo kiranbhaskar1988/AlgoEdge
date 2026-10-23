@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {"name":"▶ Paper Trading","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","args":["--paper"],"console":"integratedTerminal","justMyCode":true,"env":{"PYTHONUNBUFFERED":"1"}},
+        {"name":"🔴 Live Trading","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","args":[],"console":"integratedTerminal","justMyCode":true},
+        {"name":"📊 Dashboard Only","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","args":["--dashboard-only"],"console":"integratedTerminal"},
+        {"name":"🌍 Market Regime","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","args":["--regime"],"console":"integratedTerminal"},
+        {"name":"🧪 Verify Setup","type":"debugpy","request":"launch","program":"${workspaceFolder}/verify.py","args":[],"console":"integratedTerminal"},
+        {"name":"🧪 Auto-Fix Packages","type":"debugpy","request":"launch","program":"${workspaceFolder}/verify.py","args":["--fix"],"console":"integratedTerminal"},
+        {"name":"📈 Backtest ORB","type":"debugpy","request":"launch","program":"${workspaceFolder}/backtest.py","args":["--strategy","ORB","--symbol","RELIANCE","--days","60"],"console":"integratedTerminal"},
+        {"name":"📈 Backtest ALL","type":"debugpy","request":"launch","program":"${workspaceFolder}/backtest.py","args":["--all"],"console":"integratedTerminal"}
+    ]
+}
